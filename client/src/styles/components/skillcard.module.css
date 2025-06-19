@@ -1,0 +1,62 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+  position: relative;
+  margin: 100px auto;
+}
+
+/* FOG overlays on both sides */
+.grid::before,
+.grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.grid::before {
+  left: 0;
+  background: linear-gradient(to right, #171717, transparent);
+}
+
+.grid::after {
+  right: 0;
+  background: linear-gradient(to left, #171717, transparent);
+}
+
+.row {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 2px solid gray;
+  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
+  z-index: 1;
+  background-color: #1a1a1a;
+  /* Or randomize with JS for more flair */
+  margin-right: 12px;
+}
+
+.icon {
+  color: unset;
+  font-size: 16px;
+}

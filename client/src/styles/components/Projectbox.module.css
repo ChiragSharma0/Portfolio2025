@@ -1,0 +1,57 @@
+.projectbox {
+    width: 420px;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .Projectimg {
+        height: 235px;
+        width: 100%;
+    }
+
+    .Projectinfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 90px;
+        width: 100%;
+        padding: 16px 20px;
+
+        background-color: rgb(33, 33, 33);
+    }
+}
+
+.projectdetails {
+    overflow: hidden;
+    width: max-content;
+
+    h3 {
+        margin: 0px;
+        font-size: 16px;
+    }
+
+
+
+
+
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #858585;
+        font-size: 12px;
+        text-align: left;
+
+
+
+        /* Optional fallbacks */
+        word-break: break-word;
+    }
+
+
+}

@@ -1,0 +1,153 @@
+/* ProfileGrid.module.css */
+.grid {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 1.2 / 1;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "item1 item1 item1 item1 item2 item2"
+        "item1 item1 item1 item1 item2 item2"
+        "item3 item3 item4 item4 item2 item2"
+        "item6 item6 item4 item4 item5 item5"
+        "item6 item6 item7 item7 item7 item7"
+        "item6 item6 item7 item7 item7 item7";
+    gap: 10px;
+
+    margin:0px auto 80px auto;
+}
+
+.grid>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding: 8px;
+
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+.item7 {
+    grid-area: item7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide-in-left {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-top {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-in-bottom {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+.item1 {
+  grid-area: item1;
+  animation-name: slide-in-left;
+  animation-timeline: view();
+  animation-range: entry 60% cover 70%;
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+}
+
+.item2 {
+  grid-area: item2;
+  animation-name: slide-in-top;
+  animation-timeline: view();
+  animation-range: entry 60% cover 70%;
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+}
+
+.item3 {
+  grid-area: item3;
+  animation-name: slide-in-bottom;
+  animation-timeline: view();
+  animation-range: entry 50% cover 60%;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+  animation-name: slide-in-bottom;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+}
+
+.item6 {
+  grid-area: item6;
+  animation-name: slide-in-bottom;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+}
+
+.item7 {
+  grid-area: item7;
+  animation-name: slide-in-right;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+}

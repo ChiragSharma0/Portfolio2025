@@ -1,0 +1,129 @@
+.SideBar {
+    height: 100vh;
+    width: 230px;
+    background-color: #1C1C1C;
+    border-right: 1px solid #252525;
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+/* hide scrollbars on all browsers */
+.SideBar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+
+
+.sidebarSection {
+    padding: 0px 15px;
+}
+
+.sidebarprofile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    font-size: 0.7rem;
+    padding: 0px 20px;
+
+    .profiletext {
+        padding-left: 15px;
+        justify-content: left;
+        text-align: left;
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: rgb(137, 136, 136);
+        }
+    }
+
+
+
+
+    .profileimg {
+        height: 40px;
+        width: 40px;
+
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+        }
+    }
+
+}
+
+
+
+
+
+.menuItemhead {
+    display: flex;
+    align-items: center;
+    height: 40px;
+text-align: left;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    margin: 12px 0px 8px 0px;
+
+
+    color: rgb(130, 130, 130);
+
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0px auto;
+
+
+    color: rgb(130, 130, 130);
+
+    .menuIcon {
+        display: flex;
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
+    .menuName {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .itemno {
+        height: 20px;
+        width: 20px;
+        border: 1px solid gray;
+        border-radius: 4px;
+    }
+}
+
+.menuItem:hover {
+    color: white;
+    font-weight: 600;
+}
+
+input[type="radio"]:checked~.menuItem {
+    background-color: #2B2B2B;
+    border: 1px solid rgb(68, 68, 68);
+    color: white;
+
+}

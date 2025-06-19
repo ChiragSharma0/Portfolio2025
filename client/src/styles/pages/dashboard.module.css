@@ -1,0 +1,78 @@
+.Dashboardpage {
+    height: max-content;
+    width: 100%;
+    padding: 6rem 1rem;
+    max-width: 900px;
+    margin: 0px auto;
+    color: white;
+}
+
+.Dashboardintro {
+    text-align: left;
+    font-size: 1.5rem;
+
+    p {
+        font-size: 1rem;
+        max-width: 70%;
+        margin-top: 1.7rem ;
+    }
+    .buttonsdiv{
+        display: flex;
+        gap: 0.9rem;
+        margin-top: 1rem;
+    }
+}
+.dashsection{
+
+    margin-top: 32px;
+    h3{
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .projectlist{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+gap: 20px;
+    }
+}
+
+
+
+
+
+
+.greytext {
+    color: grey;
+}
+
+.buttongrey{
+    padding: 8px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: rgba(120, 120, 120, 0.43);
+    color: whitesmoke;
+
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.buttongreylight{
+    padding: 8px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: rgba(43, 43, 43, 0.196);
+    color: whitesmoke;
+
+    border: 1px solid grey;
+    border-radius: 4px;
+}
