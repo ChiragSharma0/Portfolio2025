@@ -4,6 +4,8 @@ import Projectbox from "../components/projectbox";
 import Dashskillcard from "../components/dashstackcard";
 import ProfileGrid from "../components/intro";
 import SkillShowcase from "../components/dashstackcard";
+import ExperienceTimeline from "../components/ExperienceTimeline";
+import Timeline from "../components/ExperienceTimeline";
 
 function Dashboard() {
     const [buttontext, settext] = useState("Email");
@@ -43,15 +45,7 @@ function Dashboard() {
                 </div>
             </div>
 
-            <div className={styles.dashsection}>
-                <h3>My Projects</h3>
-                <div className={styles.projectlist}>
-                    <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
 
-
-                    <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-                </div>
-            </div>
 
 
             <div className={styles.dashsection}>
@@ -79,11 +73,32 @@ function Dashboard() {
                 <SkillShowcase />
             </div>
 
+
+
+
+
+
             <div className={styles.dashsection}>
                 <ProfileGrid />
             </div>
 
 
+            <div className={styles.dashsection}>
+                <h3>My Projects</h3>
+                <div className={styles.projectlist}>
+                    <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
+
+
+                    <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
+                </div>
+            </div>
+
+
+            <div className={styles.dashsection}>
+                <div className={styles.timeline}></div>
+                <Timeline />
+
+            </div>
 
         </div>
 

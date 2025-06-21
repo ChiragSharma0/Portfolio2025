@@ -3,6 +3,7 @@
     display: grid;
     width: 100%;
     max-width: 800px;
+    max-height: 90vh;
     aspect-ratio: 1.2 / 1;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -15,7 +16,7 @@
         "item6 item6 item7 item7 item7 item7";
     gap: 10px;
 
-    margin:0px auto 80px auto;
+    margin: 200px auto;
 }
 
 .grid>div {
@@ -27,12 +28,35 @@
     color: white;
     font-weight: bold;
     text-align: center;
-
+    background-color: #171717;
     border-radius: 10px;
     border: 2px solid grey;
     padding: 8px;
 
+
+    .hoverContent {
+        display: none;
+        background-color: transparent;
+        background-image: url(https://cdn-icons-png.flaticon.com/512/3256/3256016.png);
+    }
+
 }
+
+.grid>div:hover>.centerText {
+    display: none;
+}
+
+.grid>div:hover>.hoverContent {
+    display: block;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3256/3256016.png);
+
+}
+
+
+
+
+
+
 
 .item1 {
     grid-area: item1;
@@ -74,80 +98,109 @@
 
 
 @keyframes slide-in-left {
-  from { transform: translateX(-100%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slide-in-right {
-  from { transform: translateX(100%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slide-in-top {
-  from { transform: translateY(-100%); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slide-in-bottom {
-  from { transform: translateY(100%); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
 .item1 {
-  grid-area: item1;
-  animation-name: slide-in-left;
-  animation-timeline: view();
-  animation-range: entry 60% cover 70%;
-  animation-fill-mode: both;
-  animation-duration: 0.8s;
+    grid-area: item1;
+    animation-name: slide-in-left;
+    animation-timeline: view();
+    animation-range: entry 60% cover 70%;
+    animation-fill-mode: both;
+    animation-duration: 0.8s;
 }
 
 .item2 {
-  grid-area: item2;
-  animation-name: slide-in-top;
-  animation-timeline: view();
-  animation-range: entry 60% cover 70%;
-  animation-fill-mode: both;
-  animation-duration: 0.8s;
+    grid-area: item2;
+    animation-name: slide-in-top;
+    animation-timeline: view();
+    animation-range: entry 60% cover 70%;
+    animation-fill-mode: both;
+    animation-duration: 0.8s;
 }
 
 .item3 {
-  grid-area: item3;
-  animation-name: slide-in-bottom;
-  animation-timeline: view();
-  animation-range: entry 50% cover 60%;
-  animation-fill-mode: forwards;
-  animation-duration: 0.8s;
+    grid-area: item3;
+    animation-name: slide-in-right;
+    animation-timeline: view();
+    animation-range: entry 15% cover 35%;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
 }
 
 .item4 {
-  grid-area: item4;
+    grid-area: item4;
+    z-index: 10;
 }
 
 .item5 {
-  grid-area: item5;
-  animation-name: slide-in-bottom;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-  animation-fill-mode: both;
-  animation-duration: 0.8s;
+    grid-area: item5;
+    animation-name: slide-in-left;
+    animation-timeline: view();
+    animation-range: entry -10% cover 10%;
+    animation-fill-mode: both;
+    animation-duration: 0.8s;
 }
 
 .item6 {
-  grid-area: item6;
-  animation-name: slide-in-bottom;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-  animation-fill-mode: both;
-  animation-duration: 0.8s;
+    grid-area: item6;
+    animation-name: slide-in-bottom;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+    animation-fill-mode: none;
+    animation-duration: 0.8s;
 }
 
 .item7 {
-  grid-area: item7;
-  animation-name: slide-in-right;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-  animation-fill-mode: both;
-  animation-duration: 0.8s;
+    grid-area: item7;
+    animation-name: slide-in-right;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    animation-fill-mode: both;
+    animation-duration: 0.8s;
 }

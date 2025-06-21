@@ -38,7 +38,11 @@
 gap: 20px;
     }
 }
-
+.timeline{
+    overflow-x: auto;
+    width: auto;
+    height: 100vh;
+}
 
 
 
