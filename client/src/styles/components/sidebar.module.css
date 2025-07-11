@@ -1,129 +1,162 @@
+/* Sidebar Container */
 .SideBar {
-    height: 100vh;
-    width: 230px;
-    background-color: #1C1C1C;
-    border-right: 1px solid #252525;
-    overflow-y: auto;
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* IE 10+ */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-color: #1c1c1c;
+  border-right: 1px solid #252525;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+overflow: visible;
+transition: all 0.3s;
 }
 
-/* hide scrollbars on all browsers */
 .SideBar::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari */
+  display: none; /* Chrome, Safari */
+}
+.collapser {
+  position: absolute;
+  top: 20px; /* adjust to vertically align with profile */
+  right: -10px; /* this pushes it outside the sidebar edge */
+  z-index: 1000;
+  cursor: pointer;
+
+  height: 20px;
+  width: 20px;
+  background: #1c1c1c;
+  border: 2px solid rgb(221, 218, 218);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  user-select: none;
 }
 
-
-
-.sidebarSection {
-    padding: 0px 15px;
-}
-
+/* Profile Section */
 .sidebarprofile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90px;
-    font-size: 0.7rem;
-    padding: 0px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 10px 20px;
+  font-size: 0.7rem;
 
-    .profiletext {
-        padding-left: 15px;
-        justify-content: left;
-        text-align: left;
-
-        h2 {
-            color: white;
-        }
-
-        p {
-            color: rgb(137, 136, 136);
-        }
-    }
-
-
-
-
-    .profileimg {
-        height: 40px;
-        width: 40px;
-
-        border-radius: 50%;
-        overflow: hidden;
-
-        img {
-            height: 100%;
-        }
-    }
+  
 
 }
 
+.profileimg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
+.profileimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
+.profiletext {
+  padding-left: 15px;
+  text-align: left;
+}
 
+.profiletext h2 {
+  color: white;
+  margin: 0;
+}
+
+.profiletext p {
+  color: rgb(137, 136, 136);
+  margin: 0;
+}
+
+/* Section */
+.sidebarScroll{
+  padding: 0px 15px;
+
+}
+.sidebarSection {
+  flex: 1;
+   overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
 
 .menuItemhead {
-    display: flex;
-    align-items: center;
-    height: 40px;
-text-align: left;
-    padding: 10px 10px;
-    border-radius: 10px;
-    font-size: 0.9rem;
-    margin: 12px 0px 8px 0px;
-
-
-    color: rgb(130, 130, 130);
-
+  display: flex;
+  align-items: center;
+  height: 40px;
+  text-align: left;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin: 12px 0px 8px 0px;
+  color: rgb(130, 130, 130);
 }
 
+/* Menu Link Container */
+.menuItemContainer {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Menu Item */
 .menuItem {
-    display: flex;
-    align-items: center;
-    height: 40px;
-
-    padding: 6px 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0px auto;
-
-
-    color: rgb(130, 130, 130);
-
-    .menuIcon {
-        display: flex;
-        margin-right: 10px;
-        font-size: 10px;
-    }
-
-    .menuName {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex: 1;
-    }
-
-    .itemno {
-        height: 20px;
-        width: 20px;
-        border: 1px solid gray;
-        border-radius: 4px;
-    }
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0px auto;
+  color: rgb(130, 130, 130);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .menuItem:hover {
-    color: white;
-    font-weight: 600;
+  color: white;
+  font-weight: 600;
 }
 
-input[type="radio"]:checked~.menuItem {
-    background-color: #2B2B2B;
-    border: 1px solid rgb(68, 68, 68);
-    color: white;
+.menuIcon {
+  display: flex;
+  margin-right: 10px;
+  font-size: 16px;
+}
 
+/* Name + Count */
+.menuName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.itemno {
+  height: 20px;
+  width: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Active link (current page) */
+.active {
+  background-color: #2b2b2b;
+  color: white !important;
+}
+.active .menuItem{
+  color: white;
+  font-weight: 600;
+  background-color: #2b2b2b;
 }

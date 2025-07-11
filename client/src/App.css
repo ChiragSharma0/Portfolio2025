@@ -28,3 +28,9 @@ input[type="radio"] {
     'opsz' 20;
     
 }
+#tsparticles{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+}

@@ -1,7 +1,10 @@
 // ProfileGrid.jsx
 import React from "react";
-import styles from "../styles/components/ProfileGrid.module.css";
-import SocialButton from "./SOCIAL";
+import styles from "../../styles/components/ProfileGrid.module.css";
+import SocialButton from "../SOCIAL";
+import MeteorCanvas from "../common/meteor";
+import StarCanvas from "../common/stars";
+
 
 const ProfileGrid = () => {
 
@@ -10,6 +13,7 @@ const ProfileGrid = () => {
     <div className={styles.grid}>
 
       <div className={styles.item1}>
+                  <MeteorCanvas />
 
         <div className={styles.hoverContent}>hover</div>
         <div className={styles.centerText}>Projects</div>
@@ -29,6 +33,7 @@ const ProfileGrid = () => {
 
 
       <div className={styles.item4}>
+
         <div className={styles.centerText}>Linkedin</div>
         <div className={styles.hoverContent}> </div>
 
@@ -48,6 +53,8 @@ const ProfileGrid = () => {
 
 
       <div className={styles.item7}>
+                  <MeteorCanvas />
+
         <div className={styles.hoverContent}></div>
         <div className={styles.centerText}>Experience</div>
       </div>

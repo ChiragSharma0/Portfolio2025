@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/components/Projectbox.module.css"
+import styles from "../../styles/components/Projectbox.module.css"
 
 function Projectbox({image, heading, info, type}) {
 

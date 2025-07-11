@@ -1,0 +1,33 @@
+.Experiencepage {
+    height: max-content;
+    width: 100%;
+    padding: 6rem 1rem;
+    max-width: 900px;
+    margin: 0px auto;
+    color: white;
+}
+
+.Experienceintro {
+
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .buttonsdiv {
+        display: flex;
+        gap: 0.9rem;
+        margin-top: 1rem;
+    }
+
+}
+
+
+.greytext {
+    color: grey;
+}
+

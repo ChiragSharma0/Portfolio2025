@@ -1,17 +1,19 @@
-.Page{
+.Page {
 
     height: 100vh;
     width: 100vw;
     background-color: #171717;
-display: flex;
+    display: flex;
 }
 
 
-.content{
+.content {
+    position: relative;
     display: flex;
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
+    flex-direction: column;
 }
 
 .content::-webkit-scrollbar {
@@ -19,3 +21,13 @@ display: flex;
     /* Chrome, Safari */
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: #292929b1;
+    color: #6a6868;
+}

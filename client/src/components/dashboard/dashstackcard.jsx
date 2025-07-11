@@ -1,4 +1,4 @@
-import styles from "../styles/components/skillcard.module.css";
+import styles from "../../styles/components/skillcard.module.css";
 import React from "react";
 
 // Icons

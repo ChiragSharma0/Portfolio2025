@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "../styles/pages/dashboard.module.css"
-import Projectbox from "../components/projectbox";
-import Dashskillcard from "../components/dashstackcard";
-import ProfileGrid from "../components/intro";
-import SkillShowcase from "../components/dashstackcard";
+import Projectbox from "../components/projects/projectbox";
+import Dashskillcard from "../components/dashboard/dashstackcard";
+import ProfileGrid from "../components/dashboard/intro";
+import SkillShowcase from "../components/dashboard/dashstackcard";
 import ExperienceTimeline from "../components/ExperienceTimeline";
 import Timeline from "../components/ExperienceTimeline";
 
@@ -26,9 +26,29 @@ function Dashboard() {
         }
     }
 
+
+
+
+    const experiences = [
+        {
+            title: "Freelancer",
+            description: "Providing web development services to clients worldwide.",
+        },
+        {
+            title: "Co-Founder, Devure Zyntra Technologies",
+            description: "Building modern websites and apps as part of a collaborative team.",
+        },
+        {
+            title: "Trainee, IIT Kanpur",
+            description: "Completed a hands-on training program at IIT Kanpur to deepen technical and professional skills.",
+        },
+    ];
+
+
     return (
 
         <div className={styles.Dashboardpage}>
+
             <div className={styles.Dashboardintro}>
                 <h1>I'm Chirag Sharma</h1>
                 <h1>A <span className={styles.greytext}>Full Stack</span> Web Developer</h1>
@@ -44,8 +64,6 @@ function Dashboard() {
                     </button>
                 </div>
             </div>
-
-
 
 
             <div className={styles.dashsection}>
@@ -74,10 +92,6 @@ function Dashboard() {
             </div>
 
 
-
-
-
-
             <div className={styles.dashsection}>
                 <ProfileGrid />
             </div>
@@ -85,6 +99,7 @@ function Dashboard() {
 
             <div className={styles.dashsection}>
                 <h3>My Projects</h3>
+
                 <div className={styles.projectlist}>
                     <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
 
@@ -95,10 +110,17 @@ function Dashboard() {
 
 
             <div className={styles.dashsection}>
-                <div className={styles.timeline}></div>
-                <Timeline />
+                <h3>My Experience</h3>
 
+                {experiences.map((exp, index) => (
+                    <div key={index} className={styles.card}>
+                        <div className={styles.title}>{exp.title}</div>
+                        <div className={styles.description}>{exp.description}</div>
+                    </div>
+                ))}
             </div>
+
+
 
         </div>
 
