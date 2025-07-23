@@ -1,0 +1,97 @@
+.Servicepage {
+    height: max-content;
+    width: 100%;
+    padding: 6rem 1rem;
+    max-width: 900px;
+    margin: 0px auto;
+    color: white;
+    padding-bottom: 360px;
+}
+
+.pageHeading {
+    text-align: left;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+}
+
+.servicesGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.serviceContainer {
+    width: 90%;
+    margin: 0px auto;
+    border: 2px solid gray;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 240px;
+}
+
+.ServiceTittle {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    text-align: left;
+    padding: 4px 60px;
+}
+
+.ServiceBody {
+
+    display: flex;
+    height: calc(100% - 40px);
+    padding: 40px 60px;
+    gap: 28px;
+    background-color: rgba(0, 0, 0, 0.51);
+}
+
+.ServiceIcon {
+    padding: 4px;
+    background-color: rgb(37, 37, 37);
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 8px;
+}
+
+.ServiceDis {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(37, 37, 37, 0.718);
+    color: rgb(180, 180, 181);
+        border-radius: 16px;
+
+}
+
+
+.Serviceintro {
+
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .buttonsdiv {
+        display: flex;
+        gap: 0.9rem;
+        margin-top: 1rem;
+    }
+
+}
+
+
+.greytext {
+    color: grey;
+}
+
+
+.stackingCard {
+  position: sticky;
+  top: 10px;
+  transition: all 0.3s ease;
+}

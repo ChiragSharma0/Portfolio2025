@@ -22,7 +22,6 @@ const TimelineElement = ({ item, index }) => {
         <div className={styles.title}><strong>{item.title}</strong></div>
         <div className={styles.jobMeta}>
           <div className={styles.duration}>{item.start} - {item.end}</div>
-          <div className={styles.shortDesc}>{item.detail.slice(0, 60)}...</div>
         </div>
 
         <div className={styles.hiddenText}>

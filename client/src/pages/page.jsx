@@ -12,6 +12,7 @@ import MeteorParticles from "../components/common/meteor";
 import MeteorCanvas from "../components/common/meteor";
 import StarCanvas from "../components/common/stars";
 import ProjectPage from "./projectPage";
+import ServicePagePage from "./Services";
 
 function Page() {
 
@@ -26,13 +27,17 @@ function Page() {
 
                 <SideBar />
                 <div className={styles.content}>
-                    <StarCanvas count={50} />
+                    <div className={styles.backdrop}>
+                        <StarCanvas count={50} />
+                    </div>
                     <Routes>
                         <Route path="/" element={<Dashboard />} />
                         <Route path="/home" element={<Dashboard />} />
 
                         <Route path="/experience" element={<ExperiencePage />} />
                         <Route path="/Projects" element={<ProjectPage />} />
+                        <Route path="/services" element={<ServicePagePage />} />
+
 
 
                     </Routes>
