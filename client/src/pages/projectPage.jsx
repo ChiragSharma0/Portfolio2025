@@ -50,37 +50,38 @@ const experienceData = [
 
 function ProjectPage() {
 
-    useEffect(() => {
-        console.log("This is data", experienceData);
-    }, []);
+  useEffect(() => {
+    console.log("This is data", experienceData);
+  }, []);
 
 
-    return (
+  return (
 
-        <div className={styles.Projectspage}>
-
-
-            <div className={styles.Projectsintro}>
-                <h1>Experience</h1>
-                <p className={styles.greytext}>A summary of my professional work history, technologies I've used, and key achievements.
-
-                </p>
-
-            </div>
-                <div className={styles.myprojects}>
-                                        <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-                                        <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-                                        <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-                                        <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-                                        <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-                                        <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-                                        <Projectbox image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0160412025002582&psig=AOvVaw3qnKtiqmJQwi_-KYaN4wp4&ust=1750149058609000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjlpKnD9Y0DFQAAAAAdAAAAABAV" heading="HSRIF" info="lorem*3jjjjjdddddddd dddddddddddddddddddddddddddddddddfhhh  hhhhhhhhhhhh hhhhhhhhhhhhhhh  hhhhhhhhruekfekr fkjfkjfhdsj" type="hello" />
-
-                </div>
+    <div className={styles.Projectspage}>
 
 
-        </div>
-    )
+      <div className={styles.Projectsintro}>
+        <h1>Experience</h1>
+        <p className={styles.greytext}>A summary of my professional work history, technologies I've used, and key achievements.
+
+        </p>
+
+      </div>
+      <div className={styles.myprojects}>
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+        <Projectbox image="https://media.licdn.com/dms/image/v2/D5622AQFB8jXaDZlxLw/feedshare-shrink_2048_1536/B56ZaqfuORGkAo-/0/1746617165481?e=1755129600&v=beta&t=xHnxqUyWEak1ho0cUr93p7FB-GwfT4AePSVRGeVUxhg" heading="HSRIF" info=" A personalised dashboard to monitor heat related stress index" type="Govt." />
+
+      </div>
+
+
+    </div>
+  )
 
 }
 

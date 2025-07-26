@@ -39,7 +39,7 @@ function ServicePagePage() {
 
             <div className={Style.Serviceintro}>
                 <h1>Services</h1>
-                <p className={Style.greytext}>  You can hire me for - </p>
+                <p className={Style.greytext}> Some of the things you can hire me for - </p>
 
             </div>
             <div className={Style.servicesGrid}>

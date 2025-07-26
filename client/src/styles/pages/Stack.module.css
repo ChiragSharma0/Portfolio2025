@@ -1,0 +1,84 @@
+.Stackpage {
+    height: max-content;
+    width: 100%;
+    padding: 6rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.Stackintro {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+}
+
+.Stackintro p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.Stackintro .buttonsdiv {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 1rem;
+}
+
+.skillcontainer {
+    width: 100%;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.skilltittle {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(97, 96, 96);
+}
+
+.skillbody {
+    /* REMOVED: display: flex; background-color: black; gap: 20px; */
+    /* ❌ This was overridden and conflicting with grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+    gap: 24px;
+    background-color: black;
+    padding: 16px;
+}
+
+.skillbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.skillbox:hover{
+        background: #1a1a1a; /* Optional background to separate box */
+
+}
+.logo {
+    font-size: 40px;
+    color: var(--text-color); /* optional */
+}
+
+.tags {
+    margin-top: 8px;
+}
+
+.tags span {
+    background-color: #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    font-size: 12px;
+    color: #333;
+}
+
+.greytext {
+    color: grey;
+}

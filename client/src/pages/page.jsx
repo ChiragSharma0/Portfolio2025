@@ -13,6 +13,8 @@ import MeteorCanvas from "../components/common/meteor";
 import StarCanvas from "../components/common/stars";
 import ProjectPage from "./projectPage";
 import ServicePagePage from "./Services";
+import AboutPage from "./Aboutpage";
+import StackPage from "./Stackpage";
 
 function Page() {
 
@@ -37,6 +39,8 @@ function Page() {
                         <Route path="/experience" element={<ExperiencePage />} />
                         <Route path="/Projects" element={<ProjectPage />} />
                         <Route path="/services" element={<ServicePagePage />} />
+                        <Route path="/about" element={<AboutPage/>} />
+                        <Route path="/stack" element={<StackPage/>} />
 
 
 

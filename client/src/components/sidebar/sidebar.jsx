@@ -57,8 +57,8 @@ function SideBar() {
 
             <h4 className={styles.menuItemhead}>Connect</h4>)}
           <MenuItem collapse={collapse} icon="photo_camera" itemname="Instagram" to="https://www.instagram.com/chirag_sharma_0000/" />
-          <MenuItem collapse={collapse} icon="terminal" itemname="Github" to="/github" />
-          <MenuItem collapse={collapse} icon="business_center" itemname="LinkedIn" to="/linkedin" />
+          <MenuItem collapse={collapse} icon="terminal" itemname="Github" to="https://github.com/ChiragSharma0/" />
+          <MenuItem collapse={collapse} icon="business_center" itemname="LinkedIn" to="https://www.linkedin.com/in/chirag-sharma-work/"/>
           <MenuItem collapse={collapse} icon="alternate_email" itemname="Contact Me" to="/contact" />
         </div>
       </div>
