@@ -6,21 +6,27 @@
   height: 100vh;
   background-color: #1c1c1c;
   border-right: 1px solid #252525;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-overflow: visible;
-transition: all 0.3s;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  overflow: visible;
+  transition: all 0.3s;
 }
 
 .SideBar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
+
 .collapser {
   position: absolute;
-  top: 20px; /* adjust to vertically align with profile */
-  right: -10px; /* this pushes it outside the sidebar edge */
+  top: 20px;
+  /* adjust to vertically align with profile */
+  right: -10px;
+  /* this pushes it outside the sidebar edge */
   cursor: pointer;
-
+  z-index: 10;
   height: 20px;
   width: 20px;
   background: #2B2B2B;
@@ -43,7 +49,7 @@ transition: all 0.3s;
   padding: 10px 20px;
   font-size: 0.7rem;
 
-  
+
 
 }
 
@@ -76,15 +82,18 @@ transition: all 0.3s;
 }
 
 /* Section */
-.sidebarScroll{
+.sidebarScroll {
   padding: 0px 15px;
 
 }
+
 .sidebarSection {
   flex: 1;
-   overflow-y: auto;
-    scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
 }
 
 .menuItemhead {
@@ -154,8 +163,88 @@ transition: all 0.3s;
   background-color: #2b2b2b;
   color: white !important;
 }
-.active .menuItem{
+
+.active .menuItem {
   color: white;
   font-weight: 600;
   background-color: #2b2b2b;
+}
+
+.baractive {
+  width: 230px;
+}
+
+.barpassive {
+  width: 70px;
+}
+
+/* Apply styles for screens ≤ 768px (tablet and below) */
+@media (max-width: 1000px) {
+  .material-symbols-outlined {
+    font-size: 30px;
+  }
+
+  .SideBar {
+    position: fixed;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
+  }
+
+  .sidebarprofile {
+    display: none;
+  }
+
+  .collapser {
+    display: none;
+  }
+
+  .sidebarSection {
+    flex: 1;
+    overflow-x: auto;
+    scrollbar-width: 10px;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+
+  }
+
+  .sidebarScroll {
+    display: flex;
+    height: 100%;
+    padding: 0px;
+  }
+
+  .menuItemhead {
+    display: none;
+  }
+
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .menuIcon {
+    margin: 0px;
+
+  }
+  .menuName{
+    white-space: nowrap;
+  }
+
+  .menuItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      border-radius: 10px;
+
+    aspect-ratio: 1/1;
+  }
+
+  .itemno {
+    display: none;
+  }
 }

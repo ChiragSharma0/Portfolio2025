@@ -113,3 +113,11 @@ gap: 20px;
   color: #b2b0b0;
   font-size: 0.95rem;
 }
+
+
+@media (max-width:480px) {
+    .card{
+        padding: 8px 16px;
+        height: auto;
+    }
+}

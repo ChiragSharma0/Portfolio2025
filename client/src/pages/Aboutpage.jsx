@@ -39,10 +39,10 @@ function AboutPage() {
                 <span className="material-symbols-outlined" style={{ fontSize: "14px" }}>location_on</span>
                 Based in India
             </div>
+            <h1 style={{ textAlign: "left" }}>About</h1>
 
             <div className={styles.Aboutintro}>
                 <div className={styles.Abouttext}>
-                    <h1>About</h1>
                     <p className={`${styles.blurred} ${done ? styles.clear : ""}`}>
                         {displayedWords.join(" ")}
                     </p>
@@ -63,9 +63,9 @@ function AboutPage() {
                             </h3>
 
                             <p>MERN, Next.js, TypeScript, Git, Docker, Prisma, Jenkins, Postgres and AWS.</p>
-                       </div>
+                        </div>
                         <div className={styles.gridbox3}>
-                             <h3>
+                            <h3>
                                 <span className={`material-symbols-outlined ${styles.icon}`}>interests</span>
                                 Interest
                             </h3>
@@ -73,7 +73,7 @@ function AboutPage() {
                             <p>Exploring new tech, Web3, IOT, and AI.</p>
                         </div>
                         <div className={styles.gridbox4}>
-                             <h3>
+                            <h3>
                                 <span className={`material-symbols-outlined ${styles.icon}`}>person_heart</span>
                                 Hobies
                             </h3>
@@ -84,7 +84,7 @@ function AboutPage() {
                 </div>
                 <div className={styles.Aboutphoto}>
                     <div className={styles.image}>                    <img src="/me.jpeg" alt="Harshit" />
-</div>
+                    </div>
                 </div>
             </div>
         </div>

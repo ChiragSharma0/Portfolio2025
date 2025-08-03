@@ -43,7 +43,8 @@
     /* REMOVED: display: flex; background-color: black; gap: 20px; */
     /* ❌ This was overridden and conflicting with grid */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2-column grid */
     gap: 24px;
     background-color: black;
     padding: 16px;
@@ -57,13 +58,21 @@
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.skillbox:hover{
-        background: #1a1a1a; /* Optional background to separate box */
+
+.skillbox:hover {
+    background: #1a1a1a;
+    /* Optional background to separate box */
 
 }
+.detail{
+    text-align: left;
+}
+
+
 .logo {
     font-size: 40px;
-    color: var(--text-color); /* optional */
+    color: var(--text-color);
+    /* optional */
 }
 
 .tags {
@@ -81,4 +90,10 @@
 
 .greytext {
     color: grey;
+}
+
+@media (max-width: 690px) {
+    .skillbody {
+        grid-template-columns: 1fr;
+    }
 }

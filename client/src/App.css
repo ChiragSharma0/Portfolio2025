@@ -20,7 +20,7 @@ input[type="radio"] {
 
 
 .material-symbols-outlined {
-  font-size: 20px;
+  font-size: 24px;
   font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -33,4 +33,12 @@ input[type="radio"] {
     width: 100%;
     position: relative;
     z-index: 200;
+}
+
+
+
+@media (max-width: 1000px) {
+  .material-symbols-outlined {
+    font-size: 20px;
+  }
 }

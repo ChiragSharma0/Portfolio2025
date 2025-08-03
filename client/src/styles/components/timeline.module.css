@@ -245,3 +245,15 @@
 
 
 
+@media (max-width:550px) {
+    .item{
+        display: flex;
+    }
+    .badge{
+      display: none;
+      position: relative;
+    }
+    .circle{
+      display: none;
+    }
+}

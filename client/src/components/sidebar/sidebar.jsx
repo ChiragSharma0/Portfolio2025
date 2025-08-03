@@ -8,7 +8,7 @@ function SideBar() {
   const [collapse, setCollapse] = useState(true);
 
   return (
-    <div className={styles.SideBar} style={{ width: collapse ? "230px" : "70px" }}   >
+    <div className={`${styles.SideBar}   ${collapse ? styles.baractive : styles.barpassive}`} >
 
       <div
         className={styles.collapser}

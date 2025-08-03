@@ -47,16 +47,24 @@
     align-items: center;
     justify-content: center;
     width: 40%;
+    
 
     img {
-        max-width: 95%;
+        width: 100%;
+        max-width: 230px;
+        
     }
-.image{
-    display: flex;
-    align-items: center;
-justify-content: center;
-height: 200px;
-}
+
+    .image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        max-width: 95%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
 }
 
 
@@ -125,4 +133,27 @@ height: 200px;
 
 .clear {
     filter: blur(0px);
+}
+
+
+
+
+@media (max-width:650px) {
+    .Aboutintro {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .Abouttext {
+        width: 100%;
+    }
+.Aboutphoto{
+    width: 100%;
+    img{
+        height: 100%;
+        width: auto;
+    }
+
+}
+
 }

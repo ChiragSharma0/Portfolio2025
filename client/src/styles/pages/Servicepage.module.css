@@ -95,3 +95,15 @@
   top: 10px;
   transition: all 0.3s ease;
 }
+
+
+@media (max-width:480px) {
+    .ServiceTittle{
+        padding: 8px 16px;
+        font-size: 10px;
+    }
+    .ServiceBody{
+        padding: 24px 16px;
+        font-size: 14px;
+    }
+}

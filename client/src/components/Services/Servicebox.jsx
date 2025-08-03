@@ -8,7 +8,7 @@ function ServiceBox({ icon, description, Tittle, stackIndex }) {
             className={Style.stackingCard}
             style={{
                 top: `${10 + stackIndex * 6}px`,
-                zIndex: 100 + stackIndex,
+                zIndex: 10 + stackIndex,
                 
             }}
         >
