@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "../styles/pages/Projects.module.css"
 import Timeline from "../components/Timeline/Timeline";
 import Projectbox from "../components/projects/projectbox";
-import Desktop from "../components/projects/windowsos";
 
 
 const experienceData = [

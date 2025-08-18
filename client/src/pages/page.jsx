@@ -15,6 +15,7 @@ import ProjectPage from "./projectPage";
 import ServicePagePage from "./Services";
 import AboutPage from "./Aboutpage";
 import StackPage from "./Stackpage";
+import WINSCREEN from "../components/windowos/screen";
 
 function Page() {
 
@@ -41,6 +42,7 @@ function Page() {
                         <Route path="/services" element={<ServicePagePage />} />
                         <Route path="/about" element={<AboutPage/>} />
                         <Route path="/stack" element={<StackPage/>} />
+                        <Route path="/dont-click" element={<WINSCREEN/>} />
 
 
 
