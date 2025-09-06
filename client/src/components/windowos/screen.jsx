@@ -11,15 +11,15 @@ const TASKBAR_HEIGHT = 60; // Set your taskbar height
 
 const initialIcons = [
   { id: 1, name: "My Files" },
-  { id: 2, name: "Browser" ,url:"https://www.cleverdeveloper.in/"},
-  { id: 3, name: "Notes",url:"https://chiragsharma0.github.io/Calculator/" },
-  { id: 4, name: "Editor" },
-  { id: 4, name: "Editor" },
-  { id: 4, name: "Editor" },
-  { id: 4, name: "Editor" },
-  { id: 4, name: "Editor" },
-  { id: 4, name: "Editor" },
-  { id: 4, name: "Editor" },
+  { id: 2, name: "Browser", url: "https://www.cleverdeveloper.in/" },
+  { id: 3, name: "Notes" },
+  { id: 4, name: "Calculator", url: "https://chiragsharma0.github.io/Calculator/", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwNPY-mGwSqhn_Yb3qiXCnIWPjEGtO27kOaA&s" },
+  { id: 5, name: "Editor" },
+  { id: 6, name: "Editor" },
+  { id: 7, name: "Editor" },
+  { id: 8, name: "Editor" },
+  { id: 9, name: "Editor" },
+  { id: 10, name: "Editor" },
 
 
 ];
@@ -126,22 +126,38 @@ export default function WINSCREEN() {
   const handleIconClick = (icon) => {
     setActive(prev => [...prev, icon]); // append new app
   };
-const handleAppClose = (icon) => {
-  setActive((prev) => prev.filter((app) => app.id !== icon.id));
-};
+  const handleAppClose = (icon) => {
+    setActive((prev) => prev.filter((app) => app.id !== icon.id));
+  };
+  const changeWindowSize = (icon) => {
+    setActive(prev =>
+      prev.map(app =>
+        app.name === icon.name ? { ...app, max: !app.max } : app
+      )
+    );
+  };
 
 
   return (
     <div className={styles.wincontainer}>
       <div className={styles.screen}>
         {icons.map((icon) => (
-          <DesktopIcon key={icon.id} icon={icon} onMouseDown={handleMouseDown} onClick={() => handleIconClick(icon)}
+          <DesktopIcon key={icon.id} icon={icon} image={icon.image} onMouseDown={handleMouseDown} onClick={() => handleIconClick(icon)}
           />
         ))}
         <div className={styles.windowcontainer}>
+
           {ActiveApps.map((app) => (
-            <AppWindow name={app.name} content={app.url} onClose={() => handleAppClose(app)}/>
+            <AppWindow
+              key={app.name}
+              name={app.name}
+              content={app.url}
+              MAX={app.max}
+              onClose={() => handleAppClose(app)}
+              onMaximize={() => changeWindowSize(app)}
+            />
           ))}
+
         </div>
       </div>
 
